@@ -1,0 +1,8 @@
+# this use for ktlint config
+# see more at https://github.com/pinterest/ktlint#editorconfig
+root = true
+[*.{kt, kts}]
+indent_size=4
+max_line_length=100
+# Comma-separated list of rules to disable
+disabled_rules=no-wildcard-imports

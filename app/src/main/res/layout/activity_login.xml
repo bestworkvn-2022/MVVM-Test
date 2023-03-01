@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFacebook"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_46"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_45"
+            app:srcCompat="@drawable/ic_facebook" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_96"
+            android:text="@string/sign_in_with_facebook"
+            android:textColor="@color/text_111827"
+            android:textSize="@dimen/sp_16" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvGoogle"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_17"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvFacebook">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_45"
+            app:srcCompat="@drawable/ic_google" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_96"
+            android:text="@string/sign_in_with_google"
+            android:textColor="@color/text_111827"
+            android:textSize="@dimen/sp_16" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLogin"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_17"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvGoogle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sign_in_with_account"
+            android:textColor="@color/text_111827"
+            android:textSize="@dimen/sp_16" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="edtPasswordLogin, edtEmailLogin, btnLogin" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="Email"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/cvLogin" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="Password"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/edtEmailLogin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPasswordLogin" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSignUp"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_17"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up with Account"
+            android:textColor="@color/text_111827"
+            android:textSize="@dimen/sp_16" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmailSingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="Email"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/cvSignUp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="Password"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/edtEmailSingup" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Signup"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPasswordSignup" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="edtEmailSingup, edtPasswordSignup, btnSignup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

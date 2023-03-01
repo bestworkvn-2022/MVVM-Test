@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586619581275",
+    "project_id": "listvideost",
+    "storage_bucket": "listvideost.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586619581275:android:1eff7fdd83ec997f63e07e",
+        "android_client_info": {
+          "package_name": "com.authentication.mvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586619581275-66pgrvm09u58i23sp4q2257r6f1b2ge6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqdhW8UN9ZdOp0hlBC1zi5hi29RsnuQYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586619581275-66pgrvm09u58i23sp4q2257r6f1b2ge6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
